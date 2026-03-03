@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "Reddirect",
+    "description": "Extension name shown in Chrome surfaces."
+  },
+  "extShortName": {
+    "message": "Reddirect",
+    "description": "Short extension name used where space is limited."
+  },
+  "extDescription": {
+    "message": "Uzreiz pārvērš subreddit apakšdomēnus tīrās reddit.com/r/... saitēs.",
+    "description": "Extension summary shown in store and extension settings."
+  }
+}

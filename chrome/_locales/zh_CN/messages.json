@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "Reddirect",
+    "description": "Extension name shown in Chrome surfaces."
+  },
+  "extShortName": {
+    "message": "Reddirect",
+    "description": "Short extension name used where space is limited."
+  },
+  "extDescription": {
+    "message": "立即将 subreddit 子域名转换为简洁的 reddit.com/r/... 链接。",
+    "description": "Extension summary shown in store and extension settings."
+  }
+}

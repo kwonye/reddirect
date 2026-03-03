@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "Reddirect",
+    "description": "Extension name shown in Chrome surfaces."
+  },
+  "extShortName": {
+    "message": "Reddirect",
+    "description": "Short extension name used where space is limited."
+  },
+  "extDescription": {
+    "message": "subreddit ఉపడొమైన్‌లను వెంటనే శుభ్రమైన reddit.com/r/... లింకులుగా మారుస్తుంది.",
+    "description": "Extension summary shown in store and extension settings."
+  }
+}

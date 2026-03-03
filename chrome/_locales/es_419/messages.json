@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "Reddirect",
+    "description": "Extension name shown in Chrome surfaces."
+  },
+  "extShortName": {
+    "message": "Reddirect",
+    "description": "Short extension name used where space is limited."
+  },
+  "extDescription": {
+    "message": "Convierte al instante los subdominios de subreddit en enlaces limpios de reddit.com/r/....",
+    "description": "Extension summary shown in store and extension settings."
+  }
+}

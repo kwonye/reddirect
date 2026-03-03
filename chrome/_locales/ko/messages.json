@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "Reddirect",
+    "description": "Extension name shown in Chrome surfaces."
+  },
+  "extShortName": {
+    "message": "Reddirect",
+    "description": "Short extension name used where space is limited."
+  },
+  "extDescription": {
+    "message": "서브레딧 서브도메인을 즉시 깔끔한 reddit.com/r/... 링크로 바꿉니다.",
+    "description": "Extension summary shown in store and extension settings."
+  }
+}

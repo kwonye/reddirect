@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "Reddirect",
+    "description": "Extension name shown in Chrome surfaces."
+  },
+  "extShortName": {
+    "message": "Reddirect",
+    "description": "Short extension name used where space is limited."
+  },
+  "extDescription": {
+    "message": "Tukar subdomain subreddit kepada pautan reddit.com/r/... yang kemas serta-merta.",
+    "description": "Extension summary shown in store and extension settings."
+  }
+}

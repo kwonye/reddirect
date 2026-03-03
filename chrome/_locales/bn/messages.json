@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "Reddirect",
+    "description": "Extension name shown in Chrome surfaces."
+  },
+  "extShortName": {
+    "message": "Reddirect",
+    "description": "Short extension name used where space is limited."
+  },
+  "extDescription": {
+    "message": "সাবরেডিট সাবডোমেইনগুলোকে সঙ্গে সঙ্গে পরিষ্কার reddit.com/r/... লিঙ্কে বদলে দিন।",
+    "description": "Extension summary shown in store and extension settings."
+  }
+}
