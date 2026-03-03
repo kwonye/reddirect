@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1280">
+  <link rel="stylesheet" href="shared.css">
+  <style>
+    body {
+      width: 1280px;
+      height: 800px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 52px;
+      font-weight: 700;
+      letter-spacing: -1.5px;
+      line-height: 1.15;
+      text-align: center;
+      margin-bottom: 52px;
+    }
+
+    .examples {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 820px;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .row .bar { flex: 1; }
+    .row .bar .url { font-size: 15px; }
+
+    .row .arrow {
+      font-size: 18px;
+      flex-shrink: 0;
+      width: 28px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="../../assets/logo/reddirect-logo.svg" alt="">
+    <span class="wordmark">Reddirect</span>
+  </div>
+
+  <h1>Works with any subreddit.</h1>
+
+  <div class="examples">
+    <div class="row">
+      <div class="bar">
+        <svg class="lock" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <span class="url url-before">worldnews.reddit.com</span>
+      </div>
+      <div class="arrow">→</div>
+      <div class="bar">
+        <svg class="lock" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <span class="url url-after">reddit.com/r/worldnews</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="bar">
+        <svg class="lock" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <span class="url url-before">soccer.reddit.com</span>
+      </div>
+      <div class="arrow">→</div>
+      <div class="bar">
+        <svg class="lock" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <span class="url url-after">reddit.com/r/soccer</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="bar">
+        <svg class="lock" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <span class="url url-before">programming.reddit.com</span>
+      </div>
+      <div class="arrow">→</div>
+      <div class="bar">
+        <svg class="lock" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <span class="url url-after">reddit.com/r/programming</span>
+      </div>
+    </div>
+  </div>
+
+  <p class="footer">Every subreddit subdomain, every time.</p>
+</body>
+</html>

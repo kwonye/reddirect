@@ -62,51 +62,6 @@
     computeRedirectUrl: computeRedirectUrl
   };
 
-  var REDDIT_REDIRECT_RULE_ID = 1;
-
-  function installRedirectRule() {
-    if (
-      typeof chrome === "undefined" ||
-      !chrome.declarativeNetRequest ||
-      !chrome.declarativeNetRequest.updateDynamicRules
-    ) {
-      return;
-    }
-
-    var rule = {
-      id: REDDIT_REDIRECT_RULE_ID,
-      priority: 1,
-      action: {
-        type: "redirect",
-        redirect: {
-          regexSubstitution: "https://reddit.com/r/\\1\\2\\3"
-        }
-      },
-      condition: {
-        regexFilter:
-          "^https?:\\/\\/(?!www\\.|old\\.|new\\.|i\\.|m\\.|np\\.|mod\\.|api\\.|oauth\\.|out\\.|amp\\.|gateway\\.|pay\\.|accounts\\.)([^./]+)\\.reddit\\.com(\\/[^?#]*)?(\\?[^#]*)?$",
-        resourceTypes: ["main_frame"]
-      }
-    };
-
-    chrome.declarativeNetRequest.updateDynamicRules({
-      removeRuleIds: [REDDIT_REDIRECT_RULE_ID],
-      addRules: [rule]
-    });
-  }
-
-  // Install rule at startup so redirects happen before page scripts execute.
-  if (
-    typeof chrome !== "undefined" &&
-    chrome.runtime &&
-    chrome.runtime.onInstalled &&
-    chrome.runtime.onStartup
-  ) {
-    chrome.runtime.onInstalled.addListener(installRedirectRule);
-    chrome.runtime.onStartup.addListener(installRedirectRule);
-    installRedirectRule();
-  }
-
   if (typeof module !== "undefined" && module.exports) {
     module.exports = api;
   }

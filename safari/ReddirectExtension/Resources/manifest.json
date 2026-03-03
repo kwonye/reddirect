@@ -12,22 +12,10 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "permissions": [
-    "declarativeNetRequest"
-  ],
   "host_permissions": [
     "*://reddit.com/*",
     "*://*.reddit.com/*"
   ],
-  "declarative_net_request": {
-    "rule_resources": [
-      {
-        "id": "subdomain_redirects",
-        "enabled": true,
-        "path": "redirect-rules.json"
-      }
-    ]
-  },
   "content_scripts": [
     {
       "matches": [

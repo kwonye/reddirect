@@ -5,7 +5,9 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 
 const require = createRequire(import.meta.url);
-const { computeRedirectUrl } = require("../shared/redirect-core.js");
+
+// The redirect-core.js is at parent directory (in Scripts folder)
+const { computeRedirectUrl } = require("../Scripts/redirect-core.js");
 
 function redirected(url) {
   return computeRedirectUrl(url);
@@ -50,28 +52,21 @@ test("returns null on invalid and unsupported URLs", () => {
   assert.equal(redirected("https://reddit.com/r/nba"), null);
 });
 
-test("shared redirect-core stays in sync with Chrome and Safari behavior", () => {
-  const shared = readFileSync(resolve(import.meta.dirname, "..", "shared", "redirect-core.js"), "utf8");
-  const chrome = readFileSync(resolve(import.meta.dirname, "..", "chrome", "redirect-core.js"), "utf8");
-  const safariPath = resolve(
-    import.meta.dirname,
-    "..",
-    "safari",
-    "ReddirectExtension",
-    "Scripts",
-    "redirect-core.js"
-  );
-  const safari = readFileSync(safariPath, "utf8");
-  const safariApi = require(safariPath);
+test("Safari redirect-core has pure JS logic only", () => {
+  const safari = readFileSync(resolve(import.meta.dirname, "..", "Scripts", "redirect-core.js"), "utf8");
 
-  assert.equal(chrome, shared);
-  assert.equal(typeof safariApi.computeRedirectUrl, "function");
+  // Safari version should have computeRedirectUrl function
+  assert.equal(typeof require(resolve(import.meta.dirname, "..", "Scripts", "redirect-core.js")).computeRedirectUrl, "function");
+
+  // Safari version should NOT have Chrome-specific APIs
   assert.equal(
-    safariApi.computeRedirectUrl("https://nba.reddit.com/top?t=week#now"),
-    "https://reddit.com/r/nba/top?t=week#now"
+    safari.includes("chrome.declarativeNetRequest"),
+    false,
+    "Safari version should not have declarativeNetRequest"
   );
-  assert.ok(
-    safari.includes("chrome.webNavigation.onBeforeNavigate.addListener") ||
-      safari.includes("chrome.declarativeNetRequest.updateDynamicRules")
+  assert.equal(
+    safari.includes("chrome.runtime"),
+    false,
+    "Safari version should not have chrome.runtime"
   );
 });
