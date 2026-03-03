@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Reddirect",
+  "short_name": "Reddirect",
+  "version": "1.0.0",
+  "description": "Redirect subreddit subdomains like nba.reddit.com to reddit.com/r/nba.",
+  "minimum_chrome_version": "114",
+  "homepage_url": "https://github.com/kwonye/reddirect",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "host_permissions": [
+    "*://*.reddit.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.reddit.com/*"
+      ],
+      "js": [
+        "redirect-core.js",
+        "content-redirect.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}

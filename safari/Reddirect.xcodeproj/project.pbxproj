@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE1174892F569832006C4DBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1174882F569832006C4DBD /* AppDelegate.swift */; };
+		BE11748D2F569832006C4DBD /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = BE11748B2F569832006C4DBD /* Main.html */; };
+		BE11748F2F569832006C4DBD /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BE11748E2F569832006C4DBD /* Icon.png */; };
+		BE1174912F569832006C4DBD /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = BE1174902F569832006C4DBD /* Style.css */; };
+		BE1174932F569832006C4DBD /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = BE1174922F569832006C4DBD /* Script.js */; };
+		BE1174952F569832006C4DBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1174942F569832006C4DBD /* ViewController.swift */; };
+		BE1174982F569832006C4DBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE1174962F569832006C4DBD /* Main.storyboard */; };
+		BE11749A2F569833006C4DBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE1174992F569833006C4DBD /* Assets.xcassets */; };
+		BE1174A12F569833006C4DBD /* Reddirect Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BE1174A02F569833006C4DBD /* Reddirect Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BE1174A62F569833006C4DBD /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1174A52F569833006C4DBD /* SafariWebExtensionHandler.swift */; };
+		BE1174B62F569833006C4DBD /* content-redirect.js in Resources */ = {isa = PBXBuildFile; fileRef = BE1174B22F569833006C4DBD /* content-redirect.js */; };
+		BE1174B72F569833006C4DBD /* redirect-core.js in Resources */ = {isa = PBXBuildFile; fileRef = BE1174B32F569833006C4DBD /* redirect-core.js */; };
+		BE1174B82F569833006C4DBD /* icons in Resources */ = {isa = PBXBuildFile; fileRef = BE1174B42F569833006C4DBD /* icons */; };
+		BE1174B92F569833006C4DBD /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = BE1174B52F569833006C4DBD /* manifest.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE1174A22F569833006C4DBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE11747D2F569832006C4DBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE11749F2F569833006C4DBD;
+			remoteInfo = "Reddirect Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE1174AD2F569833006C4DBD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BE1174A12F569833006C4DBD /* Reddirect Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BE1174852F569832006C4DBD /* Reddirect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reddirect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE1174882F569832006C4DBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE11748C2F569832006C4DBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		BE11748E2F569832006C4DBD /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		BE1174902F569832006C4DBD /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		BE1174922F569832006C4DBD /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		BE1174942F569832006C4DBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE1174972F569832006C4DBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE1174992F569833006C4DBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE11749B2F569833006C4DBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE1174A02F569833006C4DBD /* Reddirect Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Reddirect Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE1174A52F569833006C4DBD /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		BE1174A72F569833006C4DBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE1174B22F569833006C4DBD /* content-redirect.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "content-redirect.js"; path = "Scripts/content-redirect.js"; sourceTree = "<group>"; };
+		BE1174B32F569833006C4DBD /* redirect-core.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "redirect-core.js"; path = "Scripts/redirect-core.js"; sourceTree = "<group>"; };
+		BE1174B42F569833006C4DBD /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = Resources/icons; sourceTree = "<group>"; };
+		BE1174B52F569833006C4DBD /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE1174822F569832006C4DBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE11749D2F569833006C4DBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE11747C2F569832006C4DBD = {
+			isa = PBXGroup;
+			children = (
+				BE1174872F569832006C4DBD /* ReddirectApp */,
+				BE1174A42F569833006C4DBD /* ReddirectExtension */,
+				BE1174862F569832006C4DBD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE1174862F569832006C4DBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE1174852F569832006C4DBD /* Reddirect.app */,
+				BE1174A02F569833006C4DBD /* Reddirect Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE1174872F569832006C4DBD /* ReddirectApp */ = {
+			isa = PBXGroup;
+			children = (
+				BE1174882F569832006C4DBD /* AppDelegate.swift */,
+				BE1174942F569832006C4DBD /* ViewController.swift */,
+				BE1174962F569832006C4DBD /* Main.storyboard */,
+				BE1174992F569833006C4DBD /* Assets.xcassets */,
+				BE11749B2F569833006C4DBD /* Info.plist */,
+				BE11748A2F569832006C4DBD /* Resources */,
+			);
+			path = ReddirectApp;
+			sourceTree = "<group>";
+		};
+		BE11748A2F569832006C4DBD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BE11748B2F569832006C4DBD /* Main.html */,
+				BE11748E2F569832006C4DBD /* Icon.png */,
+				BE1174902F569832006C4DBD /* Style.css */,
+				BE1174922F569832006C4DBD /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BE1174A42F569833006C4DBD /* ReddirectExtension */ = {
+			isa = PBXGroup;
+			children = (
+				BE1174B12F569833006C4DBD /* Resources */,
+				BE1174A52F569833006C4DBD /* SafariWebExtensionHandler.swift */,
+				BE1174A72F569833006C4DBD /* Info.plist */,
+			);
+			path = ReddirectExtension;
+			sourceTree = "<group>";
+		};
+		BE1174B12F569833006C4DBD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BE1174B22F569833006C4DBD /* content-redirect.js */,
+				BE1174B32F569833006C4DBD /* redirect-core.js */,
+				BE1174B42F569833006C4DBD /* icons */,
+				BE1174B52F569833006C4DBD /* manifest.json */,
+			);
+			name = Resources;
+			path = ReddirectExtension;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE1174842F569832006C4DBD /* Reddirect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE1174AE2F569833006C4DBD /* Build configuration list for PBXNativeTarget "Reddirect" */;
+			buildPhases = (
+				BE1174812F569832006C4DBD /* Sources */,
+				BE1174822F569832006C4DBD /* Frameworks */,
+				BE1174832F569832006C4DBD /* Resources */,
+				BE1174AD2F569833006C4DBD /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE1174A32F569833006C4DBD /* PBXTargetDependency */,
+			);
+			name = Reddirect;
+			packageProductDependencies = (
+			);
+			productName = Reddirect;
+			productReference = BE1174852F569832006C4DBD /* Reddirect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE11749F2F569833006C4DBD /* Reddirect Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE1174AA2F569833006C4DBD /* Build configuration list for PBXNativeTarget "Reddirect Extension" */;
+			buildPhases = (
+				BE11749C2F569833006C4DBD /* Sources */,
+				BE11749D2F569833006C4DBD /* Frameworks */,
+				BE11749E2F569833006C4DBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Reddirect Extension";
+			packageProductDependencies = (
+			);
+			productName = "Reddirect Extension";
+			productReference = BE1174A02F569833006C4DBD /* Reddirect Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE11747D2F569832006C4DBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					BE1174842F569832006C4DBD = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					BE11749F2F569833006C4DBD = {
+						CreatedOnToolsVersion = 26.3;
+					};
+				};
+			};
+			buildConfigurationList = BE1174802F569832006C4DBD /* Build configuration list for PBXProject "Reddirect" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE11747C2F569832006C4DBD;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BE1174862F569832006C4DBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE1174842F569832006C4DBD /* Reddirect */,
+				BE11749F2F569833006C4DBD /* Reddirect Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE1174832F569832006C4DBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE11748F2F569832006C4DBD /* Icon.png in Resources */,
+				BE1174982F569832006C4DBD /* Main.storyboard in Resources */,
+				BE1174932F569832006C4DBD /* Script.js in Resources */,
+				BE11748D2F569832006C4DBD /* Main.html in Resources */,
+				BE11749A2F569833006C4DBD /* Assets.xcassets in Resources */,
+				BE1174912F569832006C4DBD /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE11749E2F569833006C4DBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1174B92F569833006C4DBD /* manifest.json in Resources */,
+				BE1174B82F569833006C4DBD /* icons in Resources */,
+				BE1174B62F569833006C4DBD /* content-redirect.js in Resources */,
+				BE1174B72F569833006C4DBD /* redirect-core.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE1174812F569832006C4DBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1174952F569832006C4DBD /* ViewController.swift in Sources */,
+				BE1174892F569832006C4DBD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE11749C2F569833006C4DBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1174A62F569833006C4DBD /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE1174A32F569833006C4DBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE11749F2F569833006C4DBD /* Reddirect Extension */;
+			targetProxy = BE1174A22F569833006C4DBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE11748B2F569832006C4DBD /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE11748C2F569832006C4DBD /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		BE1174962F569832006C4DBD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE1174972F569832006C4DBD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE1174A82F569833006C4DBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE1174A92F569833006C4DBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		BE1174AB2F569833006C4DBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87XRSQ2V4C;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReddirectExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Reddirect Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.dgits.reddirect.extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BE1174AC2F569833006C4DBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87XRSQ2V4C;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReddirectExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Reddirect Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.dgits.reddirect.extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BE1174AF2F569833006C4DBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87XRSQ2V4C;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReddirectApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Reddirect;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.dgits.reddirect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BE1174B02F569833006C4DBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87XRSQ2V4C;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReddirectApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Reddirect;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.dgits.reddirect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE1174802F569832006C4DBD /* Build configuration list for PBXProject "Reddirect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE1174A82F569833006C4DBD /* Debug */,
+				BE1174A92F569833006C4DBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE1174AA2F569833006C4DBD /* Build configuration list for PBXNativeTarget "Reddirect Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE1174AB2F569833006C4DBD /* Debug */,
+				BE1174AC2F569833006C4DBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE1174AE2F569833006C4DBD /* Build configuration list for PBXNativeTarget "Reddirect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE1174AF2F569833006C4DBD /* Debug */,
+				BE1174B02F569833006C4DBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE11747D2F569832006C4DBD /* Project object */;
+}

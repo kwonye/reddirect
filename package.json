@@ -1,0 +1,10 @@
+{
+  "name": "reddirect",
+  "version": "1.0.0",
+  "description": "Redirect subreddit subdomains to canonical subreddit URLs.",
+  "private": true,
+  "scripts": {
+    "sync:targets": "node ./scripts/sync-targets.mjs",
+    "test": "node --test ./tests/redirect-core.test.mjs"
+  }
+}
