@@ -21,6 +21,7 @@
 		BE1174B72F569833006C4DBD /* redirect-core.js in Resources */ = {isa = PBXBuildFile; fileRef = BE1174B32F569833006C4DBD /* redirect-core.js */; };
 		BE1174B82F569833006C4DBD /* icons in Resources */ = {isa = PBXBuildFile; fileRef = BE1174B42F569833006C4DBD /* icons */; };
 		BE1174B92F569833006C4DBD /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = BE1174B52F569833006C4DBD /* manifest.json */; };
+		BE1174BA2F569833006C4DBD /* redirect-rules.json in Resources */ = {isa = PBXBuildFile; fileRef = BE1174BB2F569833006C4DBD /* redirect-rules.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		BE1174B32F569833006C4DBD /* redirect-core.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "redirect-core.js"; path = "Scripts/redirect-core.js"; sourceTree = "<group>"; };
 		BE1174B42F569833006C4DBD /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = Resources/icons; sourceTree = "<group>"; };
 		BE1174B52F569833006C4DBD /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+		BE1174BB2F569833006C4DBD /* redirect-rules.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "redirect-rules.json"; path = "Resources/redirect-rules.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				BE1174B32F569833006C4DBD /* redirect-core.js */,
 				BE1174B42F569833006C4DBD /* icons */,
 				BE1174B52F569833006C4DBD /* manifest.json */,
+				BE1174BB2F569833006C4DBD /* redirect-rules.json */,
 			);
 			name = Resources;
 			path = ReddirectExtension;
@@ -249,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE1174B92F569833006C4DBD /* manifest.json in Resources */,
+				BE1174BA2F569833006C4DBD /* redirect-rules.json in Resources */,
 				BE1174B82F569833006C4DBD /* icons in Resources */,
 				BE1174B62F569833006C4DBD /* content-redirect.js in Resources */,
 				BE1174B72F569833006C4DBD /* redirect-core.js in Resources */,

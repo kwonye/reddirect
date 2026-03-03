@@ -19,6 +19,8 @@ Reddirect is a cross-browser extension setup that redirects Reddit subdomains li
 - `safari/`: native Safari App Extension project (`Reddirect.xcodeproj`).
 - `tests/redirect-core.test.mjs`: unit + parity tests.
 - `scripts/sync-targets.mjs`: sync shared logic and assets into browser targets.
+- `assets/logo/reddirect-logo.svg`: canonical color vector logo source.
+- `scripts/generate-icons-from-svg.sh`: generates PNG icon sets from SVG sources.
 
 Note: Safari source scripts live under `safari/ReddirectExtension/Scripts/`, and Xcode copies them into the extension bundle root as `redirect-core.js` and `content-redirect.js`.
 
@@ -30,20 +32,26 @@ Note: Safari source scripts live under `safari/ReddirectExtension/Scripts/`, and
 npm run sync:targets
 ```
 
-### 2. Run unit tests
+### 2. Regenerate icon assets from vectors
+
+```bash
+npm run generate:icons
+```
+
+### 3. Run unit tests
 
 ```bash
 npm test
 ```
 
-### 3. Chrome (unpacked)
+### 4. Chrome (unpacked)
 
 1. Open `chrome://extensions`.
 2. Enable **Developer mode**.
 3. Click **Load unpacked** and select `chrome/`.
 4. Open `https://nba.reddit.com/top?t=week#now` and verify redirect to `https://reddit.com/r/nba/top?t=week#now`.
 
-### 4. Safari (native app extension)
+### 5. Safari (native app extension)
 
 1. Open `safari/Reddirect.xcodeproj` in Xcode.
 2. Select the `Reddirect` scheme and a macOS target.

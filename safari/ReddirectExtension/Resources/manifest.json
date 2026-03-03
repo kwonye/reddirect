@@ -13,14 +13,20 @@
     "128": "icons/icon128.png"
   },
   "permissions": [
-    "webNavigation",
-    "tabs"
+    "declarativeNetRequest"
   ],
   "host_permissions": [
+    "*://reddit.com/*",
     "*://*.reddit.com/*"
   ],
-  "background": {
-    "service_worker": "redirect-core.js"
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "subdomain_redirects",
+        "enabled": true,
+        "path": "redirect-rules.json"
+      }
+    ]
   },
   "content_scripts": [
     {

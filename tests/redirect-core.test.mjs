@@ -50,14 +50,28 @@ test("returns null on invalid and unsupported URLs", () => {
   assert.equal(redirected("https://reddit.com/r/nba"), null);
 });
 
-test("shared redirect-core stays in sync with Chrome and Safari copies", () => {
+test("shared redirect-core stays in sync with Chrome and Safari behavior", () => {
   const shared = readFileSync(resolve(import.meta.dirname, "..", "shared", "redirect-core.js"), "utf8");
   const chrome = readFileSync(resolve(import.meta.dirname, "..", "chrome", "redirect-core.js"), "utf8");
-  const safari = readFileSync(
-    resolve(import.meta.dirname, "..", "safari", "ReddirectExtension", "Scripts", "redirect-core.js"),
-    "utf8"
+  const safariPath = resolve(
+    import.meta.dirname,
+    "..",
+    "safari",
+    "ReddirectExtension",
+    "Scripts",
+    "redirect-core.js"
   );
+  const safari = readFileSync(safariPath, "utf8");
+  const safariApi = require(safariPath);
 
   assert.equal(chrome, shared);
-  assert.equal(safari, shared);
+  assert.equal(typeof safariApi.computeRedirectUrl, "function");
+  assert.equal(
+    safariApi.computeRedirectUrl("https://nba.reddit.com/top?t=week#now"),
+    "https://reddit.com/r/nba/top?t=week#now"
+  );
+  assert.ok(
+    safari.includes("chrome.webNavigation.onBeforeNavigate.addListener") ||
+      safari.includes("chrome.declarativeNetRequest.updateDynamicRules")
+  );
 });

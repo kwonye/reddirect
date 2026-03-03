@@ -4,6 +4,7 @@
   "description": "Redirect subreddit subdomains to canonical subreddit URLs.",
   "private": true,
   "scripts": {
+    "generate:icons": "bash ./scripts/generate-icons-from-svg.sh",
     "sync:targets": "node ./scripts/sync-targets.mjs",
     "test": "node --test ./tests/redirect-core.test.mjs"
   }

@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "regexFilter": "^https?://www\\.reddit\\.com(?:[/?#]|$)",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "regexFilter": "^https?://old\\.reddit\\.com(?:[/?#]|$)",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "regexFilter": "^https?://new\\.reddit\\.com(?:[/?#]|$)",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "regexFilter": "^https?://i\\.reddit\\.com(?:[/?#]|$)",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "regexFilter": "^https?://m\\.reddit\\.com(?:[/?#]|$)",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "regexFilter": "^https?://np\\.reddit\\.com(?:[/?#]|$)",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "regexFilter": "^https?://mod\\.reddit\\.com(?:[/?#]|$)",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 8,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "regexFilter": "^https?://api\\.reddit\\.com(?:[/?#]|$)",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 9,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "regexFilter": "^https?://oauth\\.reddit\\.com(?:[/?#]|$)",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 10,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "regexFilter": "^https?://out\\.reddit\\.com(?:[/?#]|$)",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 11,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "regexFilter": "^https?://amp\\.reddit\\.com(?:[/?#]|$)",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 12,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "regexFilter": "^https?://gateway\\.reddit\\.com(?:[/?#]|$)",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 13,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "regexFilter": "^https?://pay\\.reddit\\.com(?:[/?#]|$)",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 14,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "regexFilter": "^https?://accounts\\.reddit\\.com(?:[/?#]|$)",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 100,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://reddit.com/r/\\1\\2\\3"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://([^./?#:]+)\\.reddit\\.com(?::[0-9]+)?([^?#]*)?(\\?[^#]*)?(?:#.*)?$",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]
