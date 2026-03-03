@@ -25,6 +25,7 @@ pnpm-debug.log*
 # Packaging artifacts
 *.zip
 *.crx
+dist/
 
 # Xcode / Swift
 build/
