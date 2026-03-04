@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "generate:icons": "bash ./scripts/generate-icons-from-svg.sh",
-    "test": "node --test ./chrome/tests/redirect-core.test.mjs && node --test ./safari/ReddirectExtension/Tests/redirect-core.test.mjs",
+    "test": "node --test ./tests/redirect-core.test.mjs",
     "release:chrome:check": "node ./scripts/release-chrome-check.mjs",
     "release:chrome:zip": "node ./scripts/release-chrome-zip.mjs",
     "generate:screenshots": "node ./scripts/generate-screenshots.mjs"
