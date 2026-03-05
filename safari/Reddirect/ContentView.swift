@@ -1,9 +1,8 @@
 import SwiftUI
 import SafariServices
 
-let extensionBundleIdentifier = "co.dgits.Reddirect.Extension"
-
 struct ContentView: View {
+    private let extensionBundleIdentifier = "co.dgits.Reddirect.Extension"
     @State private var extensionEnabled: Bool? = nil
 
     var body: some View {
