@@ -1,0 +1,9 @@
+{
+    "extension_name": {
+        "message": "Reddirect",
+        "description": "Redirect Reddit subdomain URLs to subreddit pages"
+    },
+    "extension_description": {
+        "message": "Automatically redirects nba.reddit.com to reddit.com/r/nba and other subreddit subdomains"
+    }
+}
