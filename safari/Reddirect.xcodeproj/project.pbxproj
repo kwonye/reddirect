@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 90;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -39,14 +39,12 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		BEAA09B52F59E4E300F08DFB /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 13;
+			dstSubfolder = PlugIns;
 			files = (
 				BEAA09972F59E4E300F08DFB /* Reddirect Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -101,31 +99,23 @@
 /* Begin PBXFrameworksBuildPhase section */
 		BEAA09632F59E4E100F08DFB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BEAA097D2F59E4E300F08DFB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BEAA09872F59E4E300F08DFB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BEAA09932F59E4E300F08DFB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -174,8 +164,6 @@
 				BEAA09682F59E4E100F08DFB /* Reddirect */,
 			);
 			name = Reddirect;
-			packageProductDependencies = (
-			);
 			productName = Reddirect;
 			productReference = BEAA09662F59E4E100F08DFB /* Reddirect.app */;
 			productType = "com.apple.product-type.application";
@@ -197,8 +185,6 @@
 				BEAA09832F59E4E300F08DFB /* ReddirectTests */,
 			);
 			name = ReddirectTests;
-			packageProductDependencies = (
-			);
 			productName = ReddirectTests;
 			productReference = BEAA09802F59E4E300F08DFB /* ReddirectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -220,8 +206,6 @@
 				BEAA098D2F59E4E300F08DFB /* ReddirectUITests */,
 			);
 			name = ReddirectUITests;
-			packageProductDependencies = (
-			);
 			productName = ReddirectUITests;
 			productReference = BEAA098A2F59E4E300F08DFB /* ReddirectUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -236,14 +220,10 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			fileSystemSynchronizedGroups = (
 				BEAA099A2F59E4E300F08DFB /* Reddirect Extension */,
 			);
 			name = "Reddirect Extension";
-			packageProductDependencies = (
-			);
 			productName = "Reddirect Extension";
 			productReference = BEAA09962F59E4E300F08DFB /* Reddirect Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -283,7 +263,7 @@
 			);
 			mainGroup = BEAA095D2F59E4E100F08DFB;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
+			preferredProjectObjectVersion = 90;
 			productRefGroup = BEAA09672F59E4E100F08DFB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -299,64 +279,48 @@
 /* Begin PBXResourcesBuildPhase section */
 		BEAA09642F59E4E100F08DFB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				BE7932F42F5A21DE00018A22 /* App Icon.icon in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BEAA097E2F59E4E300F08DFB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BEAA09882F59E4E300F08DFB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BEAA09942F59E4E300F08DFB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				BE7932F32F5A21DE00018A22 /* App Icon.icon in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BEAA09622F59E4E100F08DFB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BEAA097C2F59E4E300F08DFB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BEAA09862F59E4E300F08DFB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BEAA09922F59E4E300F08DFB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
@@ -379,7 +343,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		BEAA09B12F59E4E300F08DFB /* Debug */ = {
+		BEAA09B12F59E4E300F08DFB /* Debug configuration for PBXNativeTarget "Reddirect Extension" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -397,7 +361,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -414,7 +378,7 @@
 			};
 			name = Debug;
 		};
-		BEAA09B22F59E4E300F08DFB /* Release */ = {
+		BEAA09B22F59E4E300F08DFB /* Release configuration for PBXNativeTarget "Reddirect Extension" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -432,7 +396,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -449,7 +413,7 @@
 			};
 			name = Release;
 		};
-		BEAA09B32F59E4E300F08DFB /* Debug */ = {
+		BEAA09B32F59E4E300F08DFB /* Debug configuration for PBXProject "Reddirect" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -513,7 +477,7 @@
 			};
 			name = Debug;
 		};
-		BEAA09B42F59E4E300F08DFB /* Release */ = {
+		BEAA09B42F59E4E300F08DFB /* Release configuration for PBXProject "Reddirect" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -569,10 +533,12 @@
 			};
 			name = Release;
 		};
-		BEAA09B72F59E4E300F08DFB /* Debug */ = {
+		BEAA09B72F59E4E300F08DFB /* Debug configuration for PBXNativeTarget "Reddirect" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -588,6 +554,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -605,10 +572,12 @@
 			};
 			name = Debug;
 		};
-		BEAA09B82F59E4E300F08DFB /* Release */ = {
+		BEAA09B82F59E4E300F08DFB /* Release configuration for PBXNativeTarget "Reddirect" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -624,6 +593,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -641,7 +611,7 @@
 			};
 			name = Release;
 		};
-		BEAA09BA2F59E4E300F08DFB /* Debug */ = {
+		BEAA09BA2F59E4E300F08DFB /* Debug configuration for PBXNativeTarget "ReddirectTests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -662,7 +632,7 @@
 			};
 			name = Debug;
 		};
-		BEAA09BB2F59E4E300F08DFB /* Release */ = {
+		BEAA09BB2F59E4E300F08DFB /* Release configuration for PBXNativeTarget "ReddirectTests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -683,13 +653,14 @@
 			};
 			name = Release;
 		};
-		BEAA09BD2F59E4E300F08DFB /* Debug */ = {
+		BEAA09BD2F59E4E300F08DFB /* Debug configuration for PBXNativeTarget "ReddirectUITests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 87XRSQ2V4C;
 				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.dgits.ReddirectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -702,13 +673,14 @@
 			};
 			name = Debug;
 		};
-		BEAA09BE2F59E4E300F08DFB /* Release */ = {
+		BEAA09BE2F59E4E300F08DFB /* Release configuration for PBXNativeTarget "ReddirectUITests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 87XRSQ2V4C;
 				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.dgits.ReddirectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -727,46 +699,41 @@
 		BEAA09612F59E4E100F08DFB /* Build configuration list for PBXProject "Reddirect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BEAA09B32F59E4E300F08DFB /* Debug */,
-				BEAA09B42F59E4E300F08DFB /* Release */,
+				BEAA09B32F59E4E300F08DFB /* Debug configuration for PBXProject "Reddirect" */,
+				BEAA09B42F59E4E300F08DFB /* Release configuration for PBXProject "Reddirect" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		BEAA09B02F59E4E300F08DFB /* Build configuration list for PBXNativeTarget "Reddirect Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BEAA09B12F59E4E300F08DFB /* Debug */,
-				BEAA09B22F59E4E300F08DFB /* Release */,
+				BEAA09B12F59E4E300F08DFB /* Debug configuration for PBXNativeTarget "Reddirect Extension" */,
+				BEAA09B22F59E4E300F08DFB /* Release configuration for PBXNativeTarget "Reddirect Extension" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		BEAA09B62F59E4E300F08DFB /* Build configuration list for PBXNativeTarget "Reddirect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BEAA09B72F59E4E300F08DFB /* Debug */,
-				BEAA09B82F59E4E300F08DFB /* Release */,
+				BEAA09B72F59E4E300F08DFB /* Debug configuration for PBXNativeTarget "Reddirect" */,
+				BEAA09B82F59E4E300F08DFB /* Release configuration for PBXNativeTarget "Reddirect" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		BEAA09B92F59E4E300F08DFB /* Build configuration list for PBXNativeTarget "ReddirectTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BEAA09BA2F59E4E300F08DFB /* Debug */,
-				BEAA09BB2F59E4E300F08DFB /* Release */,
+				BEAA09BA2F59E4E300F08DFB /* Debug configuration for PBXNativeTarget "ReddirectTests" */,
+				BEAA09BB2F59E4E300F08DFB /* Release configuration for PBXNativeTarget "ReddirectTests" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		BEAA09BC2F59E4E300F08DFB /* Build configuration list for PBXNativeTarget "ReddirectUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BEAA09BD2F59E4E300F08DFB /* Debug */,
-				BEAA09BE2F59E4E300F08DFB /* Release */,
+				BEAA09BD2F59E4E300F08DFB /* Debug configuration for PBXNativeTarget "ReddirectUITests" */,
+				BEAA09BE2F59E4E300F08DFB /* Release configuration for PBXNativeTarget "ReddirectUITests" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
