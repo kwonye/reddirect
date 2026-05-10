@@ -21,6 +21,10 @@ browser.webNavigation.onBeforeNavigate.addListener((details) => {
         console.log(`Reddirect: Redirecting ${url.hostname} to ${newUrl}`);
         browser.tabs.update(details.tabId, { url: newUrl });
     }
+}, {
+    url: [
+        { hostSuffix: ".reddit.com" }
+    ]
 });
 
 console.log("Reddirect extension loaded");
