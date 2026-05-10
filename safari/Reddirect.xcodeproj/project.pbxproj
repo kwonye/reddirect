@@ -10,17 +10,11 @@
 		BE7932F32F5A21DE00018A22 /* App Icon.icon in Resources */ = {isa = PBXBuildFile; fileRef = BE7932F22F5A21DE00018A22 /* App Icon.icon */; };
 		BE7932F42F5A21DE00018A22 /* App Icon.icon in Resources */ = {isa = PBXBuildFile; fileRef = BE7932F22F5A21DE00018A22 /* App Icon.icon */; };
 		BEAA09972F59E4E300F08DFB /* Reddirect Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BEAA09962F59E4E300F08DFB /* Reddirect Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BE1A0000000000000000000D /* Reddirect iOS Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BE1A00000000000000000004 /* Reddirect iOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		BEAA09812F59E4E300F08DFB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BEAA095E2F59E4E100F08DFB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BEAA09652F59E4E100F08DFB;
-			remoteInfo = Reddirect;
-		};
-		BEAA098B2F59E4E300F08DFB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BEAA095E2F59E4E100F08DFB /* Project object */;
 			proxyType = 1;
@@ -34,6 +28,13 @@
 			remoteGlobalIDString = BEAA09952F59E4E300F08DFB;
 			remoteInfo = "Reddirect Extension";
 		};
+		BE1A0000000000000000000E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEAA095E2F59E4E100F08DFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE1A00000000000000000003;
+			remoteInfo = "Reddirect iOS Extension";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,14 +47,24 @@
 			);
 			name = "Embed Foundation Extensions";
 		};
+		BE1A00000000000000000008 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				BE1A0000000000000000000D /* Reddirect iOS Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BE7932F22F5A21DE00018A22 /* App Icon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = "App Icon.icon"; sourceTree = "<group>"; };
 		BEAA09662F59E4E100F08DFB /* Reddirect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reddirect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEAA09802F59E4E300F08DFB /* ReddirectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReddirectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEAA098A2F59E4E300F08DFB /* ReddirectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReddirectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEAA09962F59E4E300F08DFB /* Reddirect Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Reddirect Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE1A00000000000000000002 /* Reddirect iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reddirect iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE1A00000000000000000004 /* Reddirect iOS Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Reddirect iOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -63,6 +74,13 @@
 				Info.plist,
 			);
 			target = BEAA09952F59E4E300F08DFB /* Reddirect Extension */;
+		};
+		BE1A00000000000000000016 /* Exceptions for "Reddirect Extension" folder in "Reddirect iOS Extension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = BE1A00000000000000000003 /* Reddirect iOS Extension */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -77,21 +95,28 @@
 			path = ReddirectTests;
 			sourceTree = "<group>";
 		};
-		BEAA098D2F59E4E300F08DFB /* ReddirectUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ReddirectUITests;
-			sourceTree = "<group>";
-		};
 		BEAA099A2F59E4E300F08DFB /* Reddirect Extension */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				BEAA09AF2F59E4E300F08DFB /* Exceptions for "Reddirect Extension" folder in "Reddirect Extension" target */,
+				BE1A00000000000000000016 /* Exceptions for "Reddirect Extension" folder in "Reddirect iOS Extension" target */,
 			);
 			explicitFolders = (
 				Resources/_locales,
 				Resources/images,
+				Resources/rules,
 			);
 			path = "Reddirect Extension";
+			sourceTree = "<group>";
+		};
+		BE1A0000000000000000000C /* Reddirect iOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Reddirect iOS";
+			sourceTree = "<group>";
+		};
+		BE1A00000000000000000017 /* Shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -107,12 +132,17 @@
 			files = (
 			);
 		};
-		BEAA09872F59E4E300F08DFB /* Frameworks */ = {
+		BEAA09932F59E4E300F08DFB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
 			);
 		};
-		BEAA09932F59E4E300F08DFB /* Frameworks */ = {
+		BE1A00000000000000000006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		BE1A0000000000000000000A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
 			);
@@ -125,8 +155,9 @@
 			children = (
 				BEAA09682F59E4E100F08DFB /* Reddirect */,
 				BEAA09832F59E4E300F08DFB /* ReddirectTests */,
-				BEAA098D2F59E4E300F08DFB /* ReddirectUITests */,
 				BEAA099A2F59E4E300F08DFB /* Reddirect Extension */,
+				BE1A0000000000000000000C /* Reddirect iOS */,
+				BE1A00000000000000000017 /* Shared */,
 				BEAA09672F59E4E100F08DFB /* Products */,
 				BE7932F22F5A21DE00018A22 /* App Icon.icon */,
 			);
@@ -137,8 +168,9 @@
 			children = (
 				BEAA09662F59E4E100F08DFB /* Reddirect.app */,
 				BEAA09802F59E4E300F08DFB /* ReddirectTests.xctest */,
-				BEAA098A2F59E4E300F08DFB /* ReddirectUITests.xctest */,
 				BEAA09962F59E4E300F08DFB /* Reddirect Extension.appex */,
+				BE1A00000000000000000002 /* Reddirect iOS.app */,
+				BE1A00000000000000000004 /* Reddirect iOS Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,7 +180,7 @@
 /* Begin PBXNativeTarget section */
 		BEAA09652F59E4E100F08DFB /* Reddirect */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BEAA09B62F59E4E300F08DFB /* Build configuration list for PBXNativeTarget "Reddirect" */;
+			buildConfigurationList = BEAA09B62F59E4E100F08DFB /* Build configuration list for PBXNativeTarget "Reddirect" */;
 			buildPhases = (
 				BEAA09622F59E4E100F08DFB /* Sources */,
 				BEAA09632F59E4E100F08DFB /* Frameworks */,
@@ -162,6 +194,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				BEAA09682F59E4E100F08DFB /* Reddirect */,
+				BE1A00000000000000000017 /* Shared */,
 			);
 			name = Reddirect;
 			productName = Reddirect;
@@ -189,27 +222,6 @@
 			productReference = BEAA09802F59E4E300F08DFB /* ReddirectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BEAA09892F59E4E300F08DFB /* ReddirectUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BEAA09BC2F59E4E300F08DFB /* Build configuration list for PBXNativeTarget "ReddirectUITests" */;
-			buildPhases = (
-				BEAA09862F59E4E300F08DFB /* Sources */,
-				BEAA09872F59E4E300F08DFB /* Frameworks */,
-				BEAA09882F59E4E300F08DFB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BEAA098C2F59E4E300F08DFB /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				BEAA098D2F59E4E300F08DFB /* ReddirectUITests */,
-			);
-			name = ReddirectUITests;
-			productName = ReddirectUITests;
-			productReference = BEAA098A2F59E4E300F08DFB /* ReddirectUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		BEAA09952F59E4E300F08DFB /* Reddirect Extension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEAA09B02F59E4E300F08DFB /* Build configuration list for PBXNativeTarget "Reddirect Extension" */;
@@ -226,6 +238,47 @@
 			name = "Reddirect Extension";
 			productName = "Reddirect Extension";
 			productReference = BEAA09962F59E4E300F08DFB /* Reddirect Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		BE1A00000000000000000001 /* Reddirect iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE1A00000000000000000014 /* Build configuration list for PBXNativeTarget "Reddirect iOS" */;
+			buildPhases = (
+				BE1A00000000000000000005 /* Sources */,
+				BE1A00000000000000000006 /* Frameworks */,
+				BE1A00000000000000000007 /* Resources */,
+				BE1A00000000000000000008 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE1A0000000000000000000F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BE1A0000000000000000000C /* Reddirect iOS */,
+				BE1A00000000000000000017 /* Shared */,
+			);
+			name = "Reddirect iOS";
+			productName = "Reddirect iOS";
+			productReference = BE1A00000000000000000002 /* Reddirect iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE1A00000000000000000003 /* Reddirect iOS Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE1A00000000000000000015 /* Build configuration list for PBXNativeTarget "Reddirect iOS Extension" */;
+			buildPhases = (
+				BE1A00000000000000000009 /* Sources */,
+				BE1A0000000000000000000A /* Frameworks */,
+				BE1A0000000000000000000B /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				BEAA099A2F59E4E300F08DFB /* Reddirect Extension */,
+			);
+			name = "Reddirect iOS Extension";
+			productName = "Reddirect iOS Extension";
+			productReference = BE1A00000000000000000004 /* Reddirect iOS Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -245,11 +298,13 @@
 						CreatedOnToolsVersion = 26.3;
 						TestTargetID = BEAA09652F59E4E100F08DFB;
 					};
-					BEAA09892F59E4E300F08DFB = {
-						CreatedOnToolsVersion = 26.3;
-						TestTargetID = BEAA09652F59E4E100F08DFB;
-					};
 					BEAA09952F59E4E300F08DFB = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					BE1A00000000000000000001 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					BE1A00000000000000000003 = {
 						CreatedOnToolsVersion = 26.3;
 					};
 				};
@@ -270,8 +325,9 @@
 			targets = (
 				BEAA09652F59E4E100F08DFB /* Reddirect */,
 				BEAA097F2F59E4E300F08DFB /* ReddirectTests */,
-				BEAA09892F59E4E300F08DFB /* ReddirectUITests */,
 				BEAA09952F59E4E300F08DFB /* Reddirect Extension */,
+				BE1A00000000000000000001 /* Reddirect iOS */,
+				BE1A00000000000000000003 /* Reddirect iOS Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -288,15 +344,20 @@
 			files = (
 			);
 		};
-		BEAA09882F59E4E300F08DFB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			files = (
-			);
-		};
 		BEAA09942F59E4E300F08DFB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
 				BE7932F32F5A21DE00018A22 /* App Icon.icon in Resources */,
+			);
+		};
+		BE1A00000000000000000007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		BE1A0000000000000000000B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
 			);
 		};
 /* End PBXResourcesBuildPhase section */
@@ -312,12 +373,17 @@
 			files = (
 			);
 		};
-		BEAA09862F59E4E300F08DFB /* Sources */ = {
+		BEAA09922F59E4E300F08DFB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
 			);
 		};
-		BEAA09922F59E4E300F08DFB /* Sources */ = {
+		BE1A00000000000000000005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		BE1A00000000000000000009 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
 			);
@@ -330,20 +396,20 @@
 			target = BEAA09652F59E4E100F08DFB /* Reddirect */;
 			targetProxy = BEAA09812F59E4E300F08DFB /* PBXContainerItemProxy */;
 		};
-		BEAA098C2F59E4E300F08DFB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BEAA09652F59E4E100F08DFB /* Reddirect */;
-			targetProxy = BEAA098B2F59E4E300F08DFB /* PBXContainerItemProxy */;
-		};
 		BEAA09992F59E4E300F08DFB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BEAA09952F59E4E300F08DFB /* Reddirect Extension */;
 			targetProxy = BEAA09982F59E4E300F08DFB /* PBXContainerItemProxy */;
 		};
+		BE1A0000000000000000000F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE1A00000000000000000003 /* Reddirect iOS Extension */;
+			targetProxy = BE1A0000000000000000000E /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		BEAA09B12F59E4E300F08DFB /* Debug configuration for PBXNativeTarget "Reddirect Extension" */ = {
+		BEAA09B12F59E4E300F08DFB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -361,7 +427,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -378,7 +444,7 @@
 			};
 			name = Debug;
 		};
-		BEAA09B22F59E4E300F08DFB /* Release configuration for PBXNativeTarget "Reddirect Extension" */ = {
+		BEAA09B22F59E4E300F08DFB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -396,7 +462,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -413,7 +479,7 @@
 			};
 			name = Release;
 		};
-		BEAA09B32F59E4E300F08DFB /* Debug configuration for PBXProject "Reddirect" */ = {
+		BEAA09B32F59E4E300F08DFB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -467,7 +533,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -477,7 +543,7 @@
 			};
 			name = Debug;
 		};
-		BEAA09B42F59E4E300F08DFB /* Release configuration for PBXProject "Reddirect" */ = {
+		BEAA09B42F59E4E300F08DFB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -525,7 +591,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -533,7 +599,7 @@
 			};
 			name = Release;
 		};
-		BEAA09B72F59E4E300F08DFB /* Debug configuration for PBXNativeTarget "Reddirect" */ = {
+		BEAA09B72F59E4E300F08DFB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon";
@@ -554,7 +620,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -572,7 +638,7 @@
 			};
 			name = Debug;
 		};
-		BEAA09B82F59E4E300F08DFB /* Release configuration for PBXNativeTarget "Reddirect" */ = {
+		BEAA09B82F59E4E300F08DFB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon";
@@ -593,7 +659,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -611,7 +677,7 @@
 			};
 			name = Release;
 		};
-		BEAA09BA2F59E4E300F08DFB /* Debug configuration for PBXNativeTarget "ReddirectTests" */ = {
+		BEAA09BA2F59E4E300F08DFB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -619,7 +685,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 87XRSQ2V4C;
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.dgits.ReddirectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -632,7 +698,7 @@
 			};
 			name = Debug;
 		};
-		BEAA09BB2F59E4E300F08DFB /* Release configuration for PBXNativeTarget "ReddirectTests" */ = {
+		BEAA09BB2F59E4E300F08DFB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -640,7 +706,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 87XRSQ2V4C;
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.dgits.ReddirectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -653,43 +719,147 @@
 			};
 			name = Release;
 		};
-		BEAA09BD2F59E4E300F08DFB /* Debug configuration for PBXNativeTarget "ReddirectUITests" */ = {
+		BE1A00000000000000000010 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 87XRSQ2V4C;
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				INFOPLIST_KEY_CFBundleDisplayName = Reddirect;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = co.dgits.ReddirectUITests;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.dgits.Reddirect.iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = Reddirect;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		BEAA09BE2F59E4E300F08DFB /* Release configuration for PBXNativeTarget "ReddirectUITests" */ = {
+		BE1A00000000000000000011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87XRSQ2V4C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Reddirect;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.dgits.Reddirect.iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE1A00000000000000000012 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 87XRSQ2V4C;
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				INFOPLIST_FILE = "Reddirect iOS Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Reddirect Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = co.dgits.ReddirectUITests;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.dgits.Reddirect.iOS.Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = Reddirect;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE1A00000000000000000013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87XRSQ2V4C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Reddirect iOS Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Reddirect Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.dgits.Reddirect.iOS.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -699,40 +869,48 @@
 		BEAA09612F59E4E100F08DFB /* Build configuration list for PBXProject "Reddirect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BEAA09B32F59E4E300F08DFB /* Debug configuration for PBXProject "Reddirect" */,
-				BEAA09B42F59E4E300F08DFB /* Release configuration for PBXProject "Reddirect" */,
+				BEAA09B32F59E4E300F08DFB /* Debug */,
+				BEAA09B42F59E4E300F08DFB /* Release */,
 			);
 			defaultConfigurationName = Release;
 		};
 		BEAA09B02F59E4E300F08DFB /* Build configuration list for PBXNativeTarget "Reddirect Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BEAA09B12F59E4E300F08DFB /* Debug configuration for PBXNativeTarget "Reddirect Extension" */,
-				BEAA09B22F59E4E300F08DFB /* Release configuration for PBXNativeTarget "Reddirect Extension" */,
+				BEAA09B12F59E4E300F08DFB /* Debug */,
+				BEAA09B22F59E4E300F08DFB /* Release */,
 			);
 			defaultConfigurationName = Release;
 		};
-		BEAA09B62F59E4E300F08DFB /* Build configuration list for PBXNativeTarget "Reddirect" */ = {
+		BEAA09B62F59E4E100F08DFB /* Build configuration list for PBXNativeTarget "Reddirect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BEAA09B72F59E4E300F08DFB /* Debug configuration for PBXNativeTarget "Reddirect" */,
-				BEAA09B82F59E4E300F08DFB /* Release configuration for PBXNativeTarget "Reddirect" */,
+				BEAA09B72F59E4E300F08DFB /* Debug */,
+				BEAA09B82F59E4E300F08DFB /* Release */,
 			);
 			defaultConfigurationName = Release;
 		};
 		BEAA09B92F59E4E300F08DFB /* Build configuration list for PBXNativeTarget "ReddirectTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BEAA09BA2F59E4E300F08DFB /* Debug configuration for PBXNativeTarget "ReddirectTests" */,
-				BEAA09BB2F59E4E300F08DFB /* Release configuration for PBXNativeTarget "ReddirectTests" */,
+				BEAA09BA2F59E4E300F08DFB /* Debug */,
+				BEAA09BB2F59E4E300F08DFB /* Release */,
 			);
 			defaultConfigurationName = Release;
 		};
-		BEAA09BC2F59E4E300F08DFB /* Build configuration list for PBXNativeTarget "ReddirectUITests" */ = {
+		BE1A00000000000000000014 /* Build configuration list for PBXNativeTarget "Reddirect iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BEAA09BD2F59E4E300F08DFB /* Debug configuration for PBXNativeTarget "ReddirectUITests" */,
-				BEAA09BE2F59E4E300F08DFB /* Release configuration for PBXNativeTarget "ReddirectUITests" */,
+				BE1A00000000000000000010 /* Debug */,
+				BE1A00000000000000000011 /* Release */,
+			);
+			defaultConfigurationName = Release;
+		};
+		BE1A00000000000000000015 /* Build configuration list for PBXNativeTarget "Reddirect iOS Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE1A00000000000000000012 /* Debug */,
+				BE1A00000000000000000013 /* Release */,
 			);
 			defaultConfigurationName = Release;
 		};
